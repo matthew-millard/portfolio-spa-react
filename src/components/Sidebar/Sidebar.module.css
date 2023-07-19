@@ -1,0 +1,7 @@
+.sidebar {
+  grid-area: s;
+}
+
+h1 {
+  color: var(--green);
+}
