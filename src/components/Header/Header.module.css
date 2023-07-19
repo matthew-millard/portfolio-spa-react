@@ -1,0 +1,7 @@
+.header {
+  grid-area: h;
+}
+
+h1 {
+  color: var(--green);
+}
