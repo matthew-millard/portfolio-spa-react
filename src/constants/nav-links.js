@@ -6,4 +6,10 @@ const navLinks = [
   { title: 'Blog', url: '/blog' },
 ];
 
-export { navLinks };
+const footerLinks = [
+  { title: 'Blog', url: '/blog' },
+  { title: 'Source Code', url: '/source-code' },
+  { title: 'Projects', url: '/projects' },
+];
+
+export { navLinks, footerLinks };

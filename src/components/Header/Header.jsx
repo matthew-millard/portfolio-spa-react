@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import { navLinks } from './nav-links';
+import { navLinks } from '../../constants/nav-links';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/pro-light-svg-icons';
 import { socialIcons } from '../../icons/social-icons';
-// import styles from './Header.module.css';
-import styles from './Header-mobile.module.css';
+import styles from './Header.module.css';
 
 function Header() {
   const [clicked, setClicked] = useState(false);
