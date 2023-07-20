@@ -2,6 +2,84 @@
   grid-area: h;
 }
 
-h1 {
+/* Navigation Container */
+.nav {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: 'lg lg lk lk lk lk lk lk lk lk si si';
+}
+
+/* Logo */
+.logo {
+  grid-area: lg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.logo a {
+  text-decoration: none;
+}
+
+/* Menu Icon */
+.menuIcon {
+  display: none;
+  color: var(--green);
+  font-size: 4rem;
+}
+
+/* Links */
+.links {
+  grid-area: lk;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* Social Icons */
+.socialIcons {
+  grid-area: si;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.socialIcons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-navy-half);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+  position: relative; /* Make li a relative container */
+}
+
+.socialIcons li:hover {
+  background-color: var(--light-navy);
+}
+
+.socialIcons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--muted-green);
+  position: absolute; /* Make a tag cover the entire li */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.socialIcons li:hover a {
   color: var(--green);
 }

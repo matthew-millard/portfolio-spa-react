@@ -5,9 +5,9 @@ function App() {
   return (
     <div className={styles.container}>
       <Header className={styles.header} />
-      <Main />
+      {/* <Main />
       <Sidebar />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
