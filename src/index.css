@@ -54,7 +54,8 @@ h4 {
 
 p,
 span,
-a {
+a,
+blockquote {
   font-size: 1.6rem;
 }
 

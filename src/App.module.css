@@ -3,7 +3,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100px auto 100px;
+  grid-template-rows: 100px auto 180px;
   grid-template-areas:
     'h h h h h h h h h h h h'
     's m m m m m m m m m m m'

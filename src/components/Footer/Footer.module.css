@@ -2,6 +2,60 @@
   grid-area: f;
 }
 
-h1 {
-  color: var(--green);
+.nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    'links'
+    'socials'
+    'copyright';
+}
+
+.links {
+  grid-area: links;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.links a {
+  font-size: 1.4rem;
+  color: var(--slate);
+  text-decoration-color: var(--slate);
+}
+
+.socials {
+  grid-area: socials;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.socials a {
+  color: var(--light-navy);
+}
+
+/* .socials li {
+  transition: transform 0.3s ease;
+}
+
+.socials li:hover {
+  transform: translateY(-2px);
+} */
+
+hr {
+  width: 75%;
+  max-width: 900px;
+  border: none;
+  border-top: 1px solid var(--light-navy);
+  margin: 0 auto;
+}
+
+.copyright {
+  grid-area: copyright;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--slate);
 }
