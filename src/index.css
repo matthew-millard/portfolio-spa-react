@@ -23,6 +23,7 @@
   --dark-navy: #00010a;
   --navy: #010215;
   --light-navy: #172a45;
+  --light-navy-half: #172a457d;
   --vlight-navy: #303c55;
   --slate: #8892b0;
   --light-slate: #a8b2d1;
@@ -52,7 +53,8 @@ h4 {
 }
 
 p,
-span {
+span,
+a {
   font-size: 1.6rem;
 }
 
@@ -79,6 +81,7 @@ blockquote {
 ul,
 ol {
   list-style: none;
+  padding: 0;
 }
 
 /* Set core body defaults */
@@ -106,4 +109,19 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+/* Links */
+a {
+  color: var(--green);
+  text-decoration: underline;
+  letter-spacing: 0.05em;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.5ex;
+  text-decoration-color: var(--green);
+  transition: text-underline-offset 150ms ease-in-out;
+}
+
+a:hover {
+  text-underline-offset: 0.2ex;
 }
