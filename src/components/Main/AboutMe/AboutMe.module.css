@@ -1,0 +1,47 @@
+.hero {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    'title'
+    'image'
+    'paragraph';
+  gap: 2rem;
+}
+
+.heroTitle {
+  grid-area: title;
+  padding: 2rem 0;
+}
+
+.checkIcon {
+  font-size: 3rem;
+  margin-left: 1rem;
+  color: #2ca6f8;
+}
+
+.heroParagraph {
+  margin: 0 auto;
+  grid-area: paragraph;
+  padding: 2rem 0;
+}
+
+.heroImage {
+  grid-area: image;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    max-width: 900px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      'title image'
+      'paragraph image';
+    gap: 4rem;
+  }
+}

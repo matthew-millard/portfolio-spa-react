@@ -34,10 +34,12 @@
 
   /* Fonts */
   font-size: 62.5%;
+  color: var(--white);
 }
 
 h1 {
   font-size: 4rem;
+  color: var(--white);
 }
 
 h2 {
@@ -125,4 +127,11 @@ a {
 
 a:hover {
   text-underline-offset: 0.2ex;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
 }

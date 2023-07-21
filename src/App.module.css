@@ -6,7 +6,7 @@
   grid-template-rows: 100px auto 180px;
   grid-template-areas:
     'h h h h h h h h h h h h'
-    's m m m m m m m m m m m'
+    's m m m m m m m m m m .'
     'f f f f f f f f f f f f';
 }
 

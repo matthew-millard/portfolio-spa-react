@@ -7,14 +7,15 @@
   height: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-areas: 'lg lg lg lk si si';
+  grid-template-areas: 'lg lg lg lg si si';
 }
 
 .logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   grid-area: lg;
+  margin-left: 10%;
 }
 
 .logo span {

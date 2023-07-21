@@ -5,8 +5,8 @@ function App() {
   return (
     <div className={styles.container}>
       <Header className={styles.header} />
-      {/* <Main />
-      <Sidebar /> */}
+      <Main />
+      {/* <Sidebar /> */}
       <Footer />
     </div>
   );
