@@ -45,6 +45,7 @@
 
 /* Sidebar Container */
 .sidebar {
+  z-index: 998;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 100px auto 100px;
