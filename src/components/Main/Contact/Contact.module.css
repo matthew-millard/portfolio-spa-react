@@ -1,0 +1,121 @@
+/* Error Message */
+.inputWrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.error,
+.errorHidden {
+  position: absolute;
+  color: red;
+  margin-top: -10px;
+  font-size: 1.2rem;
+}
+
+.errorHidden {
+  visibility: hidden;
+}
+
+.container {
+  /* border: 1px solid var(--light-navy-half); */
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto);
+  grid-template-areas:
+    'title'
+    'paragraph'
+    'form';
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.title {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph {
+  grid-area: paragraph;
+}
+
+.form {
+  width: 100%;
+  margin: 0 auto;
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form label {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  background-color: transparent;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--light-slate);
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
+.form textarea {
+  height: 200px;
+}
+
+.form input[type='submit'] {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form input[type='submit']:hover {
+  background-color: var(--light-navy-half);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .error,
+  .errorHidden {
+    margin-top: -20px;
+    font-size: 1.4rem;
+  }
+  .container {
+    border: 1px solid var(--light-navy-half);
+    margin: 4rem 0;
+    gap: 4rem;
+    padding: 6rem;
+  }
+
+  .paragraph {
+    padding-right: 4rem;
+  }
+
+  .form input,
+  .form textarea {
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .form input[type='submit'] {
+    width: auto;
+    align-self: flex-end;
+    margin-top: auto;
+    padding: 0.8rem 2.4rem;
+  }
+}
