@@ -76,6 +76,11 @@
   margin-left: 4rem;
 }
 
+.activeLink a {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
 .socialIcons {
   display: flex;
   gap: 4rem;
@@ -104,7 +109,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--muted-green);
+  color: var(--blue);
   position: absolute;
   top: 0;
   right: 0;
@@ -114,7 +119,7 @@
 }
 
 .socialIcons li:hover a {
-  color: var(--green);
+  color: var(--blue);
 }
 
 /* Media Queries */
