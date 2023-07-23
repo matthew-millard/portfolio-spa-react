@@ -3,12 +3,26 @@ import Contact from './Contact';
 import Projects from './Projects';
 import styles from './Main.module.css';
 
-function Main() {
+function Main({ currentView }) {
+  let ComponentToRender;
+
+  switch (currentView) {
+    case 'about':
+      ComponentToRender = AboutMe;
+      break;
+    case 'contact':
+      ComponentToRender = Contact;
+      break;
+    case 'projects':
+      ComponentToRender = Projects;
+      break;
+    default:
+      ComponentToRender = AboutMe;
+  }
+
   return (
     <main className={styles.main}>
-      {/* <AboutMe /> */}
-      {/* <Contact /> */}
-      <Projects />
+      <ComponentToRender />
     </main>
   );
 }

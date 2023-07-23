@@ -5,11 +5,17 @@ import { faBars, faXmark } from '@fortawesome/pro-light-svg-icons';
 import { socialIcons } from '../../icons/social-icons';
 import styles from './Header.module.css';
 
-function Header() {
+function Header({ setView }) {
   const [clicked, setClicked] = useState(false);
 
   function handleClick() {
     setClicked(!clicked);
+  }
+
+  function handleNavClick(e, viewName) {
+    e.preventDefault();
+    setView(viewName);
+    setClicked(false);
   }
 
   return (
@@ -32,7 +38,9 @@ function Header() {
             {navLinks.map((link, index) => {
               return (
                 <li key={index}>
-                  <a href={link.url}>{link.title}</a>
+                  <a href={link.url} onClick={e => handleNavClick(e, link.view)}>
+                    {link.title}
+                  </a>
                 </li>
               );
             })}
