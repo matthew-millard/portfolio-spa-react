@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className={styles.container}>
-      <Header className={styles.header} setView={setView} />
+      <Header className={styles.header} setView={setView} currentView={view} />
       <Main currentView={view} />
       <Footer />
     </div>

@@ -5,7 +5,7 @@ import { faBars, faXmark } from '@fortawesome/pro-light-svg-icons';
 import { socialIcons } from '../../icons/social-icons';
 import styles from './Header.module.css';
 
-function Header({ setView }) {
+function Header({ setView, currentView }) {
   const [clicked, setClicked] = useState(false);
 
   function handleClick() {
@@ -37,7 +37,7 @@ function Header({ setView }) {
           <ul className={styles.links}>
             {navLinks.map((link, index) => {
               return (
-                <li key={index}>
+                <li key={index} className={currentView === link.view ? styles.activeLink : ''}>
                   <a href={link.url} onClick={e => handleNavClick(e, link.view)}>
                     {link.title}
                   </a>
