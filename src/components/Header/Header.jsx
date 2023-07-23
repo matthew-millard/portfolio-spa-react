@@ -34,17 +34,34 @@ function Header({ setView, currentView }) {
           />
         </div>
         <div className={`${styles.sidebar} ${clicked ? styles.open : ''}`}>
-          <ul className={styles.links}>
-            {navLinks.map((link, index) => {
-              return (
-                <li key={index} className={currentView === link.view ? styles.activeLink : ''}>
-                  <a href={link.url} onClick={e => handleNavClick(e, link.view)}>
-                    {link.title}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+          <div className={styles.navContainer}>
+            <ul className={styles.links}>
+              {navLinks.map((link, index) => {
+                return (
+                  <li key={index} className={currentView === link.view ? styles.activeLink : ''}>
+                    <a href={link.url} onClick={e => handleNavClick(e, link.view)}>
+                      {link.title}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className={`${styles.socialContainer} ${styles.mobile}`}>
+            <ul className={styles.socialIcons}>
+              {socialIcons.map((icon, index) => {
+                return (
+                  <li key={index}>
+                    <a href={icon.url}>
+                      <FontAwesomeIcon icon={icon.brand} />
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+        <div className={`${styles.socialContainer} ${styles.desktop}`}>
           <ul className={styles.socialIcons}>
             {socialIcons.map((icon, index) => {
               return (
