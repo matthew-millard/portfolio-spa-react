@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio-spa-react/static/css/main.b8d0dc82.css",
+    "main.js": "/portfolio-spa-react/static/js/main.6e23922f.js",
+    "static/media/barfly_screenshot.png": "/portfolio-spa-react/static/media/barfly_screenshot.d7a135931cc998b33a55.png",
+    "static/media/pass_gen_screenshot.png": "/portfolio-spa-react/static/media/pass_gen_screenshot.756ab4ef676e945d5d14.png",
+    "static/media/starsign_screenshot.png": "/portfolio-spa-react/static/media/starsign_screenshot.d41173f54f24b3941e70.png",
+    "static/media/codedium_screenshot.png": "/portfolio-spa-react/static/media/codedium_screenshot.ea2ab7481c2b3540753f.png",
+    "static/media/matt_millard_headshot.jpg": "/portfolio-spa-react/static/media/matt_millard_headshot.a38d7cf9a64dfdaae52f.jpg",
+    "static/media/travel_cast_screenshot.png": "/portfolio-spa-react/static/media/travel_cast_screenshot.7185495aa0bf17e0e588.png",
+    "static/media/js_genius_quiz_screenshot.png": "/portfolio-spa-react/static/media/js_genius_quiz_screenshot.aa650d7edf9b4a58f613.png",
+    "static/media/matt_millard_placeholder_cv.pdf": "/portfolio-spa-react/static/media/matt_millard_placeholder_cv.c1d6a95540743314f4dd.pdf",
+    "static/media/soehne-halbfett.woff2": "/portfolio-spa-react/static/media/soehne-halbfett.75c6f1271940515963d2.woff2",
+    "static/media/soehne-buch.woff2": "/portfolio-spa-react/static/media/soehne-buch.501597ac71236d083b84.woff2",
+    "index.html": "/portfolio-spa-react/index.html",
+    "main.b8d0dc82.css.map": "/portfolio-spa-react/static/css/main.b8d0dc82.css.map",
+    "main.6e23922f.js.map": "/portfolio-spa-react/static/js/main.6e23922f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8d0dc82.css",
+    "static/js/main.6e23922f.js"
+  ]
+}
