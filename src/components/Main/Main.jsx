@@ -1,6 +1,7 @@
 import AboutMe from './AboutMe';
 import Contact from './Contact';
 import Projects from './Projects';
+import Resume from './Resume';
 import styles from './Main.module.css';
 
 function Main({ currentView }) {
@@ -15,6 +16,9 @@ function Main({ currentView }) {
       break;
     case 'projects':
       ComponentToRender = Projects;
+      break;
+    case 'resume':
+      ComponentToRender = Resume;
       break;
     default:
       ComponentToRender = AboutMe;
