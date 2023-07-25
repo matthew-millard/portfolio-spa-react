@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    'resume'
+    'proficiencies'
+    'image';
+  gap: 2rem;
+  /* padding: 2rem; */
+}
+
+.resume {
+  grid-area: resume;
+}
+
+.proficiencies {
+  grid-area: proficiencies;
+}
+
+.icons {
+  padding-right: 2rem;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.skills {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.img {
+  max-width: 500px;
+  grid-area: image;
+}
+
+/* Media Queries */
+@media (min-width: 500px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      'resume image'
+      'proficiencies image';
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+}
