@@ -1,5 +1,5 @@
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faBars, faXmark, faRocketLaunch } from '@fortawesome/pro-light-svg-icons';
+import { faRocketLaunch } from '@fortawesome/pro-light-svg-icons';
 
 const socialIcons = [
   {
