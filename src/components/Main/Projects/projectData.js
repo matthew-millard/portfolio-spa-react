@@ -4,8 +4,17 @@ import starSignsImg from '../../../images/projects/starsign_screenshot.png';
 import jsGeniusQuizImg from '../../../images/projects/js_genius_quiz_screenshot.png';
 import passGenImg from '../../../images/projects/pass_gen_screenshot.png';
 import travelCastImg from '../../../images/projects/travel_cast_screenshot.png';
+import kbFanaticsImg from '../../../images/projects/kb_fanatics_screenshot.png';
 
 export const projects = [
+  {
+    title: 'KB Fanatics',
+    className: 'kbFanatics',
+    img: kbFanaticsImg,
+    alt: 'KB Fanatics homepage',
+    github: 'https://github.com/matthew-millard/kb-fanatics',
+    url: 'https://kb-fanatics-2-c059b16fa22f.herokuapp.com/',
+  },
   {
     title: 'BarFly',
     className: 'barfly',
