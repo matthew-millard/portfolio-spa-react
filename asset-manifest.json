@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio-spa-react/static/css/main.b8d0dc82.css",
-    "main.js": "/portfolio-spa-react/static/js/main.6e23922f.js",
+    "main.css": "/portfolio-spa-react/static/css/main.0872c776.css",
+    "main.js": "/portfolio-spa-react/static/js/main.db13653a.js",
     "static/media/barfly_screenshot.png": "/portfolio-spa-react/static/media/barfly_screenshot.d7a135931cc998b33a55.png",
+    "static/media/kb_fanatics_screenshot.png": "/portfolio-spa-react/static/media/kb_fanatics_screenshot.e2d258af3e1f86bbd97c.png",
     "static/media/pass_gen_screenshot.png": "/portfolio-spa-react/static/media/pass_gen_screenshot.756ab4ef676e945d5d14.png",
     "static/media/starsign_screenshot.png": "/portfolio-spa-react/static/media/starsign_screenshot.d41173f54f24b3941e70.png",
     "static/media/codedium_screenshot.png": "/portfolio-spa-react/static/media/codedium_screenshot.ea2ab7481c2b3540753f.png",
@@ -13,11 +14,11 @@
     "static/media/soehne-halbfett.woff2": "/portfolio-spa-react/static/media/soehne-halbfett.75c6f1271940515963d2.woff2",
     "static/media/soehne-buch.woff2": "/portfolio-spa-react/static/media/soehne-buch.501597ac71236d083b84.woff2",
     "index.html": "/portfolio-spa-react/index.html",
-    "main.b8d0dc82.css.map": "/portfolio-spa-react/static/css/main.b8d0dc82.css.map",
-    "main.6e23922f.js.map": "/portfolio-spa-react/static/js/main.6e23922f.js.map"
+    "main.0872c776.css.map": "/portfolio-spa-react/static/css/main.0872c776.css.map",
+    "main.db13653a.js.map": "/portfolio-spa-react/static/js/main.db13653a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8d0dc82.css",
-    "static/js/main.6e23922f.js"
+    "static/css/main.0872c776.css",
+    "static/js/main.db13653a.js"
   ]
 }
